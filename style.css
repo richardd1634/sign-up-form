@@ -1,0 +1,13 @@
+body {
+  background-color: #343434;
+}
+
+#title {
+  background-image: url("images/background-img-1.jpg");
+}
+
+#main-container {
+  background-color: #f9f9f9;
+  height: 400px;
+  max-width: 600px;
+}
