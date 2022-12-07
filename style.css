@@ -36,8 +36,8 @@ video {
   background-color: #efefef;
   color: #323234;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 480px;
-  max-width: 800px;
+  height: 540px;
+  width: 800px;
   display: flex;
 }
 
@@ -52,7 +52,7 @@ video {
   background-color: #12123466;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 125px;
   width: 100%;
 }
 
@@ -64,7 +64,7 @@ video {
 
 #photo-artist {
   font-size: 0.5rem;
-  margin: 300px auto;
+  margin: 330px auto;
   text-align: center;
 }
 
@@ -74,8 +74,8 @@ video {
 }
 
 header {
-  height: 170px;
-  padding: 40px 10px 0 30px;
+  height: 185px;
+  padding: 40px 30px 0 30px;
 }
 
 header p {
@@ -89,26 +89,58 @@ header > p > span {
 main {
   background-color: #f9f9f9;
   box-shadow: 0 1px 3px #9a9a9a;
-
-  height: 140px;
+  padding: 10px 20px;
+  height: 170px;
 }
 
 main > p {
   font-weight: 600;
-  padding: 10px 0 10px 20px;
   width: 100%;
 }
 
 #sign-up {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
 }
 
-input {
-  width: 110px;
+#sign-up div:nth-child(odd) {
+  margin-right: 20px;
+}
+
+#sign-up div {
+  margin-top: 4px;
+  width: 200px;
+}
+
+#sign-up label {
+  font-size: 0.6rem;
+}
+
+#sign-up input {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
 }
 
 footer {
-  padding-top: 20px;
+  font-size: 0.6rem;
+  padding: 20px;
+}
+
+footer > button {
+  background-color: #121234;
+  border-radius: 5px;
+  height: 2rem;
+  margin-bottom: 10px;
+  width: 140px;
+}
+
+footer a {
+  color: #121234;
+}
+
+footer p:last-child {
+  color: #787878;
+  text-align: center;
+  margin-top: 96px;
 }
