@@ -1,13 +1,114 @@
-body {
-  background-color: #343434;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-#title {
-  background-image: url("images/background-img-1.jpg");
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background-color: #343434;
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(fonts/Pacifico.ttf);
 }
 
 #main-container {
+  background-color: #efefef;
+  color: #323234;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 480px;
+  max-width: 800px;
+  display: flex;
+}
+
+#left-side {
+  background-image: url("images/background-img-1.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+}
+
+#title {
+  background-color: #12123466;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+#title > h1 {
+  color: #f9f9f9;
+  font-family: Pacifico;
+  font-size: 2rem;
+}
+
+#photo-artist {
+  font-size: 0.5rem;
+  margin: 300px auto;
+  text-align: center;
+}
+
+#right-side {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+header {
+  height: 170px;
+  padding: 40px 10px 0 30px;
+}
+
+header p {
+  font-weight: 600;
+}
+
+header > p > span {
+  font-style: italic;
+}
+
+main {
   background-color: #f9f9f9;
-  height: 400px;
-  max-width: 600px;
+  box-shadow: 0 1px 3px #9a9a9a;
+
+  height: 140px;
+}
+
+main > p {
+  font-weight: 600;
+  padding: 10px 0 10px 20px;
+  width: 100%;
+}
+
+#sign-up {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+input {
+  width: 110px;
+}
+
+footer {
+  padding-top: 20px;
 }
