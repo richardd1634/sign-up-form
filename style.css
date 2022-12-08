@@ -14,11 +14,6 @@ html {
   color-scheme: dark light;
 }
 
-body {
-  background-color: #343434;
-  min-height: 100vh;
-}
-
 img,
 picture,
 svg,
@@ -27,14 +22,28 @@ video {
   max-width: 100%;
 }
 
+body {
+  background-color: var(--color-1);
+  min-height: 100vh;
+}
+
 @font-face {
   font-family: Pacifico;
   src: url(fonts/Pacifico.ttf);
 }
 
+:root {
+  --color-1: #343434;
+  --color-2: #f9f9f9;
+  --color-3: #121234;
+  --container-background-color: #efefef;
+  --title-background-color: #12123466;
+  --footer-creator-color: #787878;
+}
+
 #main-container {
-  background-color: #efefef;
-  color: #323234;
+  background-color: var(--container-background-color);
+  color: var(--color-1);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 540px;
   width: 800px;
@@ -49,7 +58,7 @@ video {
 }
 
 #title {
-  background-color: #12123466;
+  background-color: var(--title-background-color);
   display: flex;
   justify-content: center;
   margin-top: 125px;
@@ -57,15 +66,20 @@ video {
 }
 
 #title > h1 {
-  color: #f9f9f9;
+  color: var(--color-2);
   font-family: Pacifico;
   font-size: 2rem;
 }
 
 #photo-artist {
+  color: var(--color-1);
   font-size: 0.5rem;
   margin: 330px auto;
   text-align: center;
+}
+
+#photo-artist a {
+  color: var(--color-2);
 }
 
 #right-side {
@@ -87,8 +101,8 @@ header > p > span {
 }
 
 main {
-  background-color: #f9f9f9;
-  box-shadow: 0 1px 3px #9a9a9a;
+  background-color: var(--color-2);
+  box-shadow: 0 1px 3px var(--color-1);
   padding: 10px 20px;
   height: 170px;
 }
@@ -122,25 +136,30 @@ main > p {
   width: 100%;
 }
 
+#sign-up input:focus {
+  outline: 2px solid var(--color-3);
+}
+
 footer {
   font-size: 0.6rem;
   padding: 20px;
 }
 
 footer > button {
-  background-color: #121234;
+  background-color: var(--color-3);
   border-radius: 5px;
+  cursor: pointer;
   height: 2rem;
   margin-bottom: 10px;
   width: 140px;
 }
 
 footer a {
-  color: #121234;
+  color: var(--color-3);
 }
 
 footer p:last-child {
-  color: #787878;
+  color: var(--footer-creator-color);
   text-align: center;
   margin-top: 96px;
 }

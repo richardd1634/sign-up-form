@@ -44,7 +44,7 @@
           <form id="sign-up" action="" method="post">
             <div>
               <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" />
+              <input type="text" id="first-name" name="first-name" required />
             </div>
             <div>
               <label for="last-name">Last Name</label>
@@ -52,7 +52,7 @@
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </div>
             <div>
               <label for="phone">Phone Number</label>
@@ -60,7 +60,8 @@
             </div>
             <div>
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required />
+              <span id="password-match-error"></span>
             </div>
             <div>
               <label for="password-confirm">Confirm Password</label>
@@ -68,6 +69,7 @@
                 type="password"
                 name="pass-confirm"
                 id="password-confirm"
+                required
               />
             </div>
           </form>
