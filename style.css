@@ -39,6 +39,7 @@ body {
   --container-background-color: #efefef;
   --title-background-color: #12123466;
   --footer-creator-color: #787878;
+  --error-msg-color: #cc0000;
 }
 
 #main-container {
@@ -48,6 +49,7 @@ body {
   height: 540px;
   width: 800px;
   display: flex;
+  margin: 0 auto;
 }
 
 #left-side {
@@ -163,3 +165,12 @@ footer p:last-child {
   text-align: center;
   margin-top: 96px;
 }
+
+|| ERROR VALIDATION
+
+.error {
+  color: var(--error-msg-color);
+  font-size: 0.6rem;
+}
+
+#first-name
