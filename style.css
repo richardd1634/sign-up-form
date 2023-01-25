@@ -46,7 +46,7 @@ body {
   background-color: var(--container-background-color);
   color: var(--color-1);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 540px;
+  height: 600px;
   width: 800px;
   display: flex;
   margin: 0 auto;
@@ -76,7 +76,7 @@ body {
 #photo-artist {
   color: var(--color-1);
   font-size: 0.5rem;
-  margin: 330px auto;
+  margin: 380px auto;
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ main {
   background-color: var(--color-2);
   box-shadow: 0 1px 3px var(--color-1);
   padding: 10px 20px;
-  height: 170px;
+  height: 220px;
 }
 
 main > p {
@@ -124,7 +124,7 @@ main > p {
 }
 
 #sign-up div {
-  margin-top: 4px;
+  margin-top: 14px;
   width: 200px;
 }
 
@@ -133,13 +133,16 @@ main > p {
 }
 
 #sign-up input {
+  background-color: var(--container-background-color);
   border-radius: 5px;
+  color: var(--color-1);
   display: block;
+  border: 0.2px solid #cccccc;
   width: 100%;
 }
 
 #sign-up input:focus {
-  outline: 2px solid var(--color-3);
+  outline: 1px solid var(--color-3);
 }
 
 footer {
@@ -166,9 +169,14 @@ footer p:last-child {
   margin-top: 96px;
 }
 
-|| ERROR VALIDATION
+/* || ERROR VALIDATION */
 
 .error {
+  border: 1px solid var(--error-msg-color);
+  color: var(--error-msg-color);
+}
+
+#error-msg {
   color: var(--error-msg-color);
   font-size: 0.6rem;
 }
