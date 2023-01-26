@@ -137,7 +137,7 @@ main > p {
   border-radius: 5px;
   color: var(--color-1);
   display: block;
-  border: 0.2px solid #cccccc;
+
   width: 100%;
 }
 
@@ -173,12 +173,9 @@ footer p:last-child {
 
 .error {
   border: 1px solid var(--error-msg-color);
-  color: var(--error-msg-color);
 }
 
 #error-msg {
   color: var(--error-msg-color);
   font-size: 0.6rem;
 }
-
-#first-name
